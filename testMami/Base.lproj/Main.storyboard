@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testMami" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="76k-Zx-x1x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGi-hX-Vg9">
+                                <rect key="frame" x="57.5" y="203.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AkY-eZ-fhT"/>
+                                    <constraint firstAttribute="height" constant="100" id="JOp-CI-FsX"/>
+                                </constraints>
+                                <state key="normal" image="mami"/>
+                                <connections>
+                                    <action selector="buttonMami:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2w2-J4-T1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-Ne-ifb">
+                                <rect key="frame" x="217.5" y="203.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IST-1q-bv7"/>
+                                    <constraint firstAttribute="height" constant="100" id="snS-uF-y3J"/>
+                                </constraints>
+                                <state key="normal" image="engel"/>
+                                <connections>
+                                    <action selector="buttonAngel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEN-52-swp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lki-i9-oz8">
+                                <rect key="frame" x="53" y="370.5" width="109" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EpY-bl-MYe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWy-LJ-Utk">
+                                <rect key="frame" x="210" y="370.5" width="115" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yno-YR-EK8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vGi-hX-Vg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="3IB-gn-JVC"/>
+                            <constraint firstItem="76k-Zx-x1x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5cg-Ob-htY"/>
+                            <constraint firstItem="vGi-hX-Vg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="Q4o-gD-mQl"/>
+                            <constraint firstItem="76k-Zx-x1x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RyA-q4-DPn"/>
+                            <constraint firstItem="Lki-i9-oz8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="VWc-k8-hwA"/>
+                            <constraint firstItem="Lki-i9-oz8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="Vbc-tF-zh2"/>
+                            <constraint firstItem="RhQ-Ne-ifb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="Y6U-Ml-Rax"/>
+                            <constraint firstItem="76k-Zx-x1x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d58-aE-rbb"/>
+                            <constraint firstItem="76k-Zx-x1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jEg-31-wzA"/>
+                            <constraint firstItem="vGi-hX-Vg9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="mK4-yy-Z0C"/>
+                            <constraint firstItem="yWy-LJ-Utk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="s5Y-Yf-caO"/>
+                            <constraint firstItem="yWy-LJ-Utk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="tQs-DV-NGt"/>
+                            <constraint firstItem="RhQ-Ne-ifb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="udl-pT-QOC"/>
+                            <constraint firstItem="vGi-hX-Vg9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="wEB-l4-kMP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1334" height="1334"/>
+        <image name="engel" width="256" height="256"/>
+        <image name="mami" width="647" height="627"/>
+    </resources>
+</document>
